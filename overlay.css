@@ -1,0 +1,199 @@
+.s-works {
+    padding-top: 15rem;
+    padding-bottom: 15.6rem;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## bricks/masonry - (_site-layout.scss)
+ * ------------------------------------------------------------------- */
+
+.row-wrap {
+    margin-top: 4.8rem;
+    max-width: none;
+    width: 1600px;
+}
+
+.work:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.masonry .grid-sizer, .masonry__brick {
+    width: 400px;
+}
+
+.masonry__brick {
+    float: left;
+    padding: 0;
+}
+
+.item-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.item-img__thumb img {
+    vertical-align: top;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.item-img__thumb .shadow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
+}
+
+.item-img__thumb a {
+    display: block;
+}
+
+.item-img__thumb a::before {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.item-img__thumb a::after {
+    content: "...";
+    font-family: georgia, serif;
+    font-size: 3rem;
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    z-index: 1;
+}
+
+.item-img__text {
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    padding: 0 3rem;
+    z-index: 2;
+}
+
+.item-img__title {
+    color: #FFFFFF;
+    font-family: "montserrat-semibold", sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin: 0;
+}
+
+.item-img__cat {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.item-img__caption {
+    display: none;
+}
+
+.item-img__project-link {
+    display: block;
+    color: #FFFFFF;
+    box-shadow: 0 0 0 1px #FFFFFF;
+    border-radius: 50%;
+    height: 4.2rem;
+    width: 4.2rem;
+    text-align: center;
+    z-index: 500;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.item-img__project-link i {
+    font-size: 1.8rem;
+    line-height: 4.2rem;
+}
+
+.item-img__project-link::before {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 3rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 50%;
+    left: -3rem;
+}
+
+.item-img__project-link:hover, .item-folio__project-link:focus, .item-folio__project-link:active {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+
+/* on hover */
+
+.item-img:hover .item-img__thumb a::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.item-img:hover .item-img__thumb a::after {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.item-img:hover .item-img__thumb img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.item-img:hover .item-img__project-link {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
