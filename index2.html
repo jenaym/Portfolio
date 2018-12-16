@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,39 +10,59 @@
     <link rel="stylesheet" href="assets/css/overlay.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="parallax.js-1.5.0/parallax.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Montserrat:600" rel="stylesheet">
+
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset-top="197">
-    <div class="container">
-        <div class="hero-image">
-            <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="view.jpg" > -->
 
-            <!-- NavBar -->
+<body data-spy="scroll" data-target=".navbar">
+
+        <div class="hero-image">
             <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                    <div class="navbar-header">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>                        
+                        </button>
                         <a class="navbar-brand" href="#">Jenay McAuley</a>
+                      </div>
+                      <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+                            <li><a class="smoothscroll" href="#about">About</a></li>
+                            <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+                            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+                        </ul>
+                      </div>
                     </div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a class="smoothscroll" href="#home" title="home">Home</a></li>
-                        <li><a class="smoothscroll" href="#about">About</a></li>
-                        <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
-                        <li><a class="smoothscroll" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
             </nav>
 
             <section id="home">
-                <div class="hero-text">
-                    <h1>I am Jenay McAuley</h1>
-                    <p>And I'm a Web Developer</p>
-                    <button>Hire me</button>
+                <div class="row text-center" id="homePage">
+                    <div class="col-sm-6 col-md-6 col-lg-6" id="hero-text">
+                        <h1>I am Jenay McAuley</h1>
+                        <h3>And I'm a Web Developer</h3>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4" id="buttons">
+                        <div class="row">
+                            <button class="btn">
+                                <a class="smoothscroll" href="#about"><h3>More About Me</h3></a>
+                            </button>
+                        </div>
+                        <div class="row">
+                            <button class="btn">
+                            <a class="smoothscroll" href="#portfolio"><h3>Latest Projects</h3></a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
+      
             </section>
         </div>
+
 
 
 
@@ -53,7 +73,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-6">
-                    <img class="headshot" src="assets/images/IMG_9376.jpg" alt="Jenay McAuley Headshot">
+                    <img class="img-responsive" id="headshot" src="assets/images/IMG_9376.jpg" alt="Jenay McAuley Headshot">
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <p> My name is Jenay McAuley and I am 22 years old. I have lived in Seattle for my entire life,
@@ -86,7 +106,7 @@
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="work">
-                        <img src="assets/images/puppy1.jpg" class="image" title="Img 1" data-size="1050x700" style="width:100%">
+                        <img src="assets/images/Project1.png" class="image" alt="Project 1" data-size="1050x700" style="width:100%">
                         <div class="text">
                             <h3>Project #1</h3>
                         </div>
@@ -102,7 +122,7 @@
 
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="work">
-                        <img src="assets/images/puppy2.jpeg" class="image" title="Img 2" data-size="1050x700" style="width:100%">
+                        <img src="assets/images/trivia.png" class="image" alt="2000's Trivia" data-size="1050x700" style="width:100%">
                         <div class="text">
                             <h3>2000s Trivia</h3>
                         </div>
@@ -119,7 +139,7 @@
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="work">
-                        <img src="assets/images/puppy3.jpg" class="image" title="Img 3" data-size="1050x700" style="width:100%">
+                        <img src="assets/images/train.png" class="image" alt="Train-Scheduler" data-size="1050x700" style="width:100%">
                         <div class="text">
                             <h3>Train Scheduler</h3>
                         </div>
@@ -134,71 +154,95 @@
 
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="work">
-                        <img src="assets/images/puppy4.jpg" class="image" title="Img 4" data-size="1050x700" style="width:100%">
+                        <img src="assets/images/node.png" class="image" alt="Liri-Bot" data-size="1050x700" style="width:100%">
                         <div class="text">
-                            <h3>Giftastic</h3>
+                            <h3>Liri-Bot</h3>
                         </div>
                         <div class="overlay">
-                            <a href="https://jenaym.github.io/Gif-App/">
+                            <a href="https://jenaym.github.io/liri-node-app">
                                 <i class="fa fa-link" aria-hidden="true"></i>
                                 </a>
                         </div>
 
                         
-                        <a href="https://github.com/jenaym/Gif-App">Giftastic GitHub Repo</a>
+                        <a href="https://github.com/jenaym/liri-node-app">Liri-Bot GitHub Repo</a>
                     </div>
                 </div>
 
             </div>
         </section>
 
-
+    <div class="hero-image">
         <section id="contact">
             <div class="row text-center">
                 <h3>CONTACT</h3>
                 <h1>Ways To Get In Touch</h1>
             </div>
-            <div class="row" id="social">
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                    <a href="jenaym@uw.edu">
-                    <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
-                    <h4>Email</h4>
-                    <p>
-                        <span class="pseudo-link">jenaym@uw.edu</span>
-                    </p>
-                    </a>
+            <div class="row text-center" id="social">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="row">
+                        <a href="jenaym@uw.edu">
+                        <i class="fa fa-envelope-square fa-5x" aria-hidden="true"></i>
+                        <h4>Email</h4>
+                        <h4 class="link">jenaym@uw.edu</h4>
+                        </a>
+                    </div>
+                    <div class="row">
+                            <a href="https://www.linkedin.com/in/jenay-mcauley-b298a5170/">
+                                <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
+                            <h4>LinkedIn</h4>
+                            </a>
+                    </div>
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                        <a href="206-437-6463">
-                        <i class="fa fa-phone fa-5x" aria-hidden="true"></i>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="row">
+                        <i class="fa fa-phone-square fa-5x" aria-hidden="true"></i>
                         <h4>Phone</h4>
                         <p>
                             <span class="pseudo-link">206-437-6463</span>
                         </p>
-                        </a>
                     </div>
-                    <div class="col-sm-3 col-md-3 col-lg-3">
-                            <a href="https://www.linkedin.com/in/jenay-mcauley-b298a5170/">
-                                <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
-                            <h4>linkedin</h4>
+                    <div class="row">
+                            <a href="https://github.com/jenaym">
+                                <i class="fa fa-github-square fa-5x" aria-hidden="true"></i>
+                            <h4>GitHub Profile</h4>
                             </a>
                     </div>
+                </div>
             </div>
+
+            <footer>
+                <div class="footer">
+                    &copy; 2018 Jenay McAuley
+                </div>
+            </footer>
 
         </section>
+        </div>
 
-
-
-
-        <footer>
-            <div class="footer">
-                copyright &copy;
-            </div>
-        </footer>
     </div>
 
 
+    <script>
+    $(document).ready(function(){
+        $('body').scrollspy({target: ".navbar", offset: 50});
 
+        $(".smoothscroll").on('click', function(event) {
+            if (this.hash != "") {
+                event.preventDefault();
+
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top},
+                    800, function() {
+                        window.location.hash = hash;
+                    });
+            }
+        });
+    });
+
+    </script>
 
 
 </body>
