@@ -102,10 +102,10 @@
     </section>
 
     <section id="portfolio">
-        <div class="row text-center">
+        <!-- <div class="row text-center">
             <h3>PORTFOLIO</h3>
             <h1>See My Latest Projects</h1>
-            <div class="row">
+            <div class="flex row">
                 <button id="allProjects">Show All</button>
                 <button id="frontEnd">Front-End</button>
                 <button id="backEnd">Back-End</button>
@@ -116,10 +116,63 @@
                 <button id="firebase">Firebase</button>
 
             </div>
+        </div> -->
+        <div class="row text-center">
+            <h3>PORTFOLIO</h3>
+            <h1>See My Latest Projects</h1>
+            <div class="cta filter">
+                <a class="all active" data-filter="all" href="#" role="button">Show All</a>
+                <a class="green" data-filter="frontEnd" href="#" role="button">Front-End</a>
+                <a class="blue" data-filter="nodeJS" href="#" role="button">Node.js</a>
+                <a class="red" data-filter="mySQL" href="#" role="button">MySQL</a>
+                <a class="blue" data-filter="express" href="#" role="button">Express</a>
+                <a class="red" data-filter="firebase" href="#" role="button">Firebase</a>
+              </div>
+            <!-- <div class="flex row">
+                <div class="filter" data-filter="allProjects">Show All</div>
+                <div class="filter" data-filter="frontEnd">Front-End</div>
+                <div class="filter" data-filter="nodeJS">Node.js</div>
+                <div class="filter" data-filter="mySQL">MySQL</div>
+                <div class="filter" data-filter="express">Express</div>
+                <div class="filter" data-filter="firebase">Firebase</div>
+            </div> -->
         </div>
 
-        <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-4">
+
+        <div id="projectRow" class="container flex row wrap">
+                <div class="boxes">
+                        <a class="red" data-color="red" href="#">Box1</a>
+                        <a class="green" data-color="green" href="#">Box2</a>
+                        <a class="blue" data-color="blue" href="#">Box3</a>
+                        <a class="green" data-color="green" href="#">Box4</a>
+                        <a class="red" data-color="red" href="#">Box5</a>
+                        <a class="green" data-color="green" href="#">Box6</a>
+                        <a class="blue" data-color="blue" href="#">Box7</a>
+                        <a class="red" data-color="red" href="#">Box8</a>
+                        <a class="green" data-color="green" href="#">Box9</a>
+                        <a class="blue" data-color="blue" href="#">Box10</a>
+                        <a class="red" data-color="red" href="#">Box11</a>
+                        <a class="green" data-color="green" href="#">Box12</a>
+                        <a class="blue" data-color="blue" href="#">Box13</a>
+                        <a class="green" data-color="green" href="#">Box14</a>
+                        <a class="red" data-color="red" href="#">Box15</a>
+                        <a class="blue" data-color="blue" href="#">Box16</a>
+                      </div>
+            <!-- <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="work" id="liquidAssets">
+                    <img src="assets/images/liquidAssets.png" class="image" alt="Liquid Assets" data-size="1050x700"
+                        style="width:100%">
+                    <div class="text">
+                        <h3>Liquid Assets</h3>
+                    </div>
+                    <div class="overlay">
+                        <a href="https://tranquil-meadow-47203.herokuapp.com/">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
+                    <a href="https://github.com/jenaym/Project-3">Recipe Wolves GitHub Repo</a>
+                </div>
+            </div> -->
+            <!-- <div class="col-sm-3 col-md-3 col-lg-3">
                 <div class="work" id="recipeWolves">
                     <img src="assets/images/recipeWolves.png" class="image" alt="Recipe Wolves" data-size="1050x700"
                         style="width:100%">
@@ -130,10 +183,10 @@
                         <a href="https://peaceful-eyrie-53353.herokuapp.com/">
                             <i class="fa fa-link" aria-hidden="true"></i>
                     </div>
-                    <a href="hhttps://github.com/jenaym/Project-2">Recipe Wolves GitHub Repo</a>
+                    <a href="https://github.com/jenaym/Project-2">Recipe Wolves GitHub Repo</a>
                 </div>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4">
+            </div> -->
+            <!-- <div class="col-sm-3 col-md-3 col-lg-3">
                 <div class="work" id="project1">
                     <img src="assets/images/Project1.png" class="image" alt="IDK You Decide" data-size="1050x700"
                         style="width:100%">
@@ -148,7 +201,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-4 col-md-4 col-lg-4">
+            <div class="col-sm-3 col-md-3 col-lg-3">
                 <div class="work" id="trivia">
                     <img src="assets/images/trivia.png" class="image" alt="2000's Trivia" data-size="1050x700"
                         style="width:100%">
@@ -161,9 +214,9 @@
                     </div>
                     <a href="https://github.com/jenaym/TriviaGame">2000s Trivia GitHub Repo</a>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-4">
                 <div class="work" id="train">
                     <img src="assets/images/train.png" class="image" alt="Train-Scheduler" data-size="1050x700"
@@ -229,7 +282,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
     </section>
 
     <div class="hero-image">
