@@ -12,6 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Montserrat:600" rel="stylesheet">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
 </head>
 
@@ -88,134 +89,146 @@
     </section>
 
     <section id="portfolio">
+
         <div class="row text-center">
             <h3>PORTFOLIO</h3>
             <h1>See My Latest Projects</h1>
-            <div class="row">
-                <button id="allProjects">Show All</button>
-                <button id="frontEnd">Front-End</button>
-                <button id="backEnd">Back-End</button>
-                <button id="HTML5">HTML5</button>
-                <button id="nodeJS">NodeJS</button>
-                <button id="mySQL">MySQL</button>
-                <button id="express">Express</button>
-                <button id="firebase">Firebase</button>
 
+        </div>
+        <div class="button-group filters-button-group">
+                <button class="button is-checked" data-filter="*">Show All</button>
+                <button class="button" data-filter=".full-stack">Full-Stack</button>
+                <button class="button" data-filter=".front-end">Front-End</button>
+                <button class="button" data-filter=".nodeJS">Node.js</button>
+                <button class="button" data-filter=".react">React</button>
+                <button class="button" data-filter=".mySQL">MySQL</button>
+                <button class="button" data-filter=".mongodb">MongoDB</button>
+                <button class="button" data-filter=".express">Express</button>
+                <button class="button" data-filter=".api">APIs</button>
+                <button class="button" data-filter=".firebase">Firebase</button>
+        </div>
+
+
+        <div class="grid grid-pad">
+                <div class="element-item full-stack front-end mySQL api " data-category="full-stack">
+                    <div class="work" id="recipeWolves">
+                            <img src="assets/images/recipeWolves.png" class="image" alt="Recipe Wolves" data-size="1050x700"
+                                style="width:100%">
+                            <div class="text">
+                                <h3>Recipe Wolves</h3>
+                            </div>
+                            <div class="overlay">
+                                <a href="https://peaceful-eyrie-53353.herokuapp.com/">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                            </div>
+                            <a href="https://github.com/jenaym/Project-2">Recipe Wolves GitHub Repo</a>
+                    </div>
+                </div>
+                <div class="element-item front-end firebase api " data-category="front-end">
+                        <div class="work" id="project1">
+                                <img src="assets/images/Project1.png" class="image" alt="IDK You Decide" data-size="1050x700"
+                                    style="width:100%">
+                                <div class="text">
+                                    <h3>IDK You Decide</h3>
+                                </div>
+                                <div class="overlay">
+                                    <a href="https://zhangjt9317.github.io/Team-7-First-Web-Dev-Project/">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+                                <a href="https://github.com/Zhangjt9317/Team-7-First-Web-Dev-Project">Project #1 GitHub Repo</a>
+                            </div>
+                </div>
+                <div class="element-item full-stack front-end mongodb nodeJS express " data-category="full-stack">
+                        <div class="work" id="newsHeadlines">
+                            <img src="assets/images/trivia.png" class="image" alt="2000's Trivia" data-size="1050x700"
+                                style="width:100%">
+                            <div class="text">
+                                <h3>News Headlines</h3>
+                            </div>
+                            <div class="overlay">
+                                <a href="https://shrouded-eyrie-44672.herokuapp.com">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                            </div>
+                            <a href="https://github.com/jenaym/Mongo-Web-Scraper">News Headlines GitHub Repo</a>
+                        </div>
+                    </div>
+                <div class="element-item full-stack front-end mongodb express " data-category="full-stack">
+                    <div class="work" id="reactGoogleBooksSearch">
+                        <img src="assets/images/trivia.png" class="image" alt="2000's Trivia" data-size="1050x700"
+                            style="width:100%">
+                        <div class="text">
+                            <h3>React Google Books Search</h3>
+                        </div>
+                        <div class="overlay">
+                            <a href="https://infinite-eyrie-79163.herokuapp.com/">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                        </div>
+                        <a href="https://github.com/jenaym/NYT-Google-Book-Search">React Google Books Search GitHub Repo</a>
+                    </div>
+                </div>
+                <div class="element-item front-end firebase " data-category="front-end">
+                        <div class="work" id="train">
+                                <img src="assets/images/train.png" class="image" alt="Train-Scheduler" data-size="1050x700"
+                                    style="width:100%">
+                                <div class="text">
+                                    <h3>Train Scheduler</h3>
+                                </div>
+                                <div class="overlay">
+                                    <a href="https://jenaym.github.io/Firebase-Assignment.Train-Scheduler/">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+                                <a href="https://github.com/jenaym/Firebase-Assignment.Train-Scheduler">Train Scheduler GitHub
+                                    Repo</a>
+                            </div>
+                </div>
+                <div class="element-item mySQL nodeJS " data-category="back-end">
+                        <div class="work" id="liriBot">
+                                <img src="assets/images/node.png" class="image" alt="Liri-Bot" data-size="1050x700"
+                                    style="width:100%">
+                                <div class="text">
+                                    <h3>Liri-Bot</h3>
+                                </div>
+                                <div class="overlay">
+                                    <a href="https://jenaym.github.io/liri-node-app">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <a href="https://github.com/jenaym/liri-node-app">Liri-Bot GitHub Repo</a>
+                            </div>
+                </div>
+                <div class="element-item mySQL nodeJS " data-category="back-end">
+                        <div class="work" id="bamazon">
+                                <img src="assets/images/bamazon.png" class="image" alt="mySQL" data-size="1050x700"
+                                    style="width:100%">
+                                <div class="text">
+                                    <h3>Bamazon - mySQL & Node.js </h3>
+                                </div>
+                                <div class="overlay">
+                                    <a href="https://github.com/jenaym/Node.js-MySQL">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+                                <a href="https://github.com/jenaym/Node.js-MySQL">Bamazon GitHub Repo</a>
+                            </div>
+                </div>
+                <div class="element-item full-stack front-end mySQL firebase " data-category="full-stack">
+                    <div class="work" id="friendFinder">
+                                <img src="assets/images/friendFinder.png" class="image" alt="friendFinder" data-size="1050x700"
+                                    style="width:100%">
+                                <div class="text">
+                                    <h3>Friend Finder</h3>
+                                </div>
+                                <div class="overlay">
+                                    <a href="https://afternoon-oasis-17744.herokuapp.com/">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+            
+                                <a href="https://github.com/jenaym/FriendFinder">Friend Finder GitHub Repo</a>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <div class="work" id="recipeWolves">
-                    <img src="assets/images/recipeWolves.png" class="image" alt="Recipe Wolves" data-size="1050x700"
-                        style="width:100%">
-                    <div class="text">
-                        <h3>Recipe Wolves</h3>
-                    </div>
-                    <div class="overlay">
-                        <a href="https://peaceful-eyrie-53353.herokuapp.com/">
-                            <i class="fa fa-link" aria-hidden="true"></i>
-                    </div>
-                    <a href="hhttps://github.com/jenaym/Project-2">Recipe Wolves GitHub Repo</a>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <div class="work" id="project1">
-                    <img src="assets/images/Project1.png" class="image" alt="IDK You Decide" data-size="1050x700"
-                        style="width:100%">
-                    <div class="text">
-                        <h3>IDK You Decide</h3>
-                    </div>
-                    <div class="overlay">
-                        <a href="https://zhangjt9317.github.io/Team-7-First-Web-Dev-Project/">
-                            <i class="fa fa-link" aria-hidden="true"></i>
-                    </div>
-                    <a href="https://github.com/Zhangjt9317/Team-7-First-Web-Dev-Project">Project #1 GitHub Repo</a>
-                </div>
-            </div>
-
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <div class="work" id="trivia">
-                    <img src="assets/images/trivia.png" class="image" alt="2000's Trivia" data-size="1050x700"
-                        style="width:100%">
-                    <div class="text">
-                        <h3>2000s Trivia</h3>
-                    </div>
-                    <div class="overlay">
-                        <a href="https://jenaym.github.io/TriviaGame/">
-                            <i class="fa fa-link" aria-hidden="true"></i>
-                    </div>
-                    <a href="https://github.com/jenaym/TriviaGame">2000s Trivia GitHub Repo</a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <div class="work" id="train">
-                    <img src="assets/images/train.png" class="image" alt="Train-Scheduler" data-size="1050x700"
-                        style="width:100%">
-                    <div class="text">
-                        <h3>Train Scheduler</h3>
-                    </div>
-                    <div class="overlay">
-                        <a href="https://jenaym.github.io/Firebase-Assignment.Train-Scheduler/">
-                            <i class="fa fa-link" aria-hidden="true"></i>
-                    </div>
-                    <a href="https://github.com/jenaym/Firebase-Assignment.Train-Scheduler">Train Scheduler GitHub
-                        Repo</a>
-                </div>
-            </div>
-
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <div class="work" id="liriBot">
-                    <img src="assets/images/node.png" class="image" alt="Liri-Bot" data-size="1050x700"
-                        style="width:100%">
-                    <div class="text">
-                        <h3>Liri-Bot</h3>
-                    </div>
-                    <div class="overlay">
-                        <a href="https://jenaym.github.io/liri-node-app">
-                            <i class="fa fa-link" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <a href="https://github.com/jenaym/liri-node-app">Liri-Bot GitHub Repo</a>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <div class="work" id="bamazon">
-                    <img src="assets/images/bamazon.png" class="image" alt="mySQL" data-size="1050x700"
-                        style="width:100%">
-                    <div class="text">
-                        <h3>Bamazon - mySQL & Node.js </h3>
-                    </div>
-                    <div class="overlay">
-                        <a href="https://github.com/jenaym/Node.js-MySQL">
-                            <i class="fa fa-link" aria-hidden="true"></i>
-                    </div>
-                    <a href="https://github.com/jenaym/Node.js-MySQL">Bamazon GitHub Repo</a>
-                </div>
-            </div>
-
-        </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <div class="work" id="friendFinder">
-                    <img src="assets/images/friendFinder.png" class="image" alt="friendFinder" data-size="1050x700"
-                        style="width:100%">
-                    <div class="text">
-                        <h3>Friend Finder</h3>
-                    </div>
-                    <div class="overlay">
-                        <a href="https://afternoon-oasis-17744.herokuapp.com/">
-                            <i class="fa fa-link" aria-hidden="true"></i>
-                    </div>
-
-                    <a href="https://github.com/jenaym/FriendFinder">Friend Finder GitHub Repo</a>
-                </div>
-            </div>
-
-        </div>
     </section>
 
     <div class="hero-image">
@@ -287,16 +300,9 @@
         //                 });
         //         }
         //     });
-        // });
-
-        // $("#allProjects").on("click", function (event) {
-        //     $("#recipeWolves").show();
-        //     $("#project1").show();
-        //     $("#trivia").show();
-        //     $("#train").show();
-        //     $("#liriBot").show();
-        //     $("#bamazon").show();
         // }); -->
+        
+
 
 </body>
 

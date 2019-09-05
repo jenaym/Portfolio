@@ -4,36 +4,43 @@
     background-color: lightgrey;
 }
 
-.work {
+/* .work {
   position: relative;
     margin: 15px 0px;
 }
 
 .work a {
     color: black;
-}
+} */
 
 
-.image {
+/* .image {
   opacity: 1;
   display: block;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
+  /* max-height: 146px;
   transition: .5s ease;
   backface-visibility: hidden;
 
-}
-
-.work:hover .image {
+}  */
+.element-item:hover .image {
   opacity: 0.6;
   transform: scale(1.1);
   width: 100%;
 }
 
-.work:hover .overlay {
+.element-item:hover .image {
+  opacity: 0.6;
+  transform: scale(1.1);
+  width: 100%;
+}
+
+.element-item:hover .overlay {
     transform: scale(1);
     opacity: 1;
   }
+ 
   
 
 .overlay {
@@ -50,7 +57,7 @@
     position: absolute;
     bottom: 10%;
     left: 10%;
-}
+} 
 
   
 
