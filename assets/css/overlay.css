@@ -24,19 +24,15 @@
   backface-visibility: hidden;
 
 }  */
-.element-item:hover .image {
+.work:hover .image {
   opacity: 0.6;
   transform: scale(1.1);
   width: 100%;
 }
 
-.element-item:hover .image {
-  opacity: 0.6;
-  transform: scale(1.1);
-  width: 100%;
-}
 
-.element-item:hover .overlay {
+
+.work:hover .overlay {
     transform: scale(1);
     opacity: 1;
   }
