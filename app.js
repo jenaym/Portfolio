@@ -119,14 +119,14 @@ var iso = new Isotope( '.grid', {
   // filter functions
   var filterFns = {
     // show if number is greater than 50
-    numberGreaterThan50: function( itemElem ) {
-      var number = itemElem.querySelector('.number').textContent;
-      return parseInt( number, 10 ) > 50;
-    },
+    // numberGreaterThan50: function( itemElem ) {
+    //   var number = itemElem.querySelector('.number').textContent;
+    //   return parseInt( number, 10 ) > 50;
+    // },
     // show if name ends with -ium
     ium: function( itemElem ) {
       var name = itemElem.querySelector('.name').textContent;
-      return name.match( /ium$/ );
+      return name.match;
     }
   };
   
@@ -194,89 +194,89 @@ var iso = new Isotope( '.grid', {
   
 //   })(jQuery);
 
-$("#allProjects").on("click", function (event) {
-    $("#recipeWolves").show();
-    $("#project1").show();
-    $("#trivia").show();
-    $("#train").show();
-    $("#liriBot").show();
-    $("#bamazon").show();
-    $("#friendFinder").show()
-});
+// $("#allProjects").on("click", function (event) {
+//     $("#recipeWolves").show();
+//     $("#project1").show();
+//     $("#trivia").show();
+//     $("#train").show();
+//     $("#liriBot").show();
+//     $("#bamazon").show();
+//     $("#friendFinder").show()
+// });
 
-$("#frontEnd").on("click", function (event) {
-    $("#recipeWolves").show();
-    $("#project1").show();
-    $("#trivia").show();
-    $("#train").show();
-    $("#liriBot").hide();
-    $("#bamazon").hide();
-    $("#friendFinder").show();
-});
+// $("#frontEnd").on("click", function (event) {
+//     $("#recipeWolves").show();
+//     $("#project1").show();
+//     $("#trivia").show();
+//     $("#train").show();
+//     $("#liriBot").hide();
+//     $("#bamazon").hide();
+//     $("#friendFinder").show();
+// });
 
-$("#backEnd").on("click", function (event) {
-    $("#recipeWolves").show();
-    $("#project1").show();
-    $("#trivia").show();
-    $("#train").show();
-    $("#liriBot").show();
-    $("#bamazon").show();
-    $("#friendFinder").show();
-});
+// $("#backEnd").on("click", function (event) {
+//     $("#recipeWolves").show();
+//     $("#project1").show();
+//     $("#trivia").show();
+//     $("#train").show();
+//     $("#liriBot").show();
+//     $("#bamazon").show();
+//     $("#friendFinder").show();
+// });
 
-$("#HTML5").on("click", function (event) {
-    $("#recipeWolves").show();
-    $("#project1").show();
-    $("#trivia").show();
-    $("#train").show();
-    $("#liriBot").hide();
-    $("#bamazon").hide();
-    $("#friendFinder").show();
-});
+// $("#HTML5").on("click", function (event) {
+//     $("#recipeWolves").show();
+//     $("#project1").show();
+//     $("#trivia").show();
+//     $("#train").show();
+//     $("#liriBot").hide();
+//     $("#bamazon").hide();
+//     $("#friendFinder").show();
+// });
 
-$("#nodeJS").on("click", function (event) {
-    $("#recipeWolves").show();
-    $("#project1").hide();
-    $("#trivia").hide();
-    $("#train").hide();
-    $("#liriBot").show();
-    $("#bamazon").show();
-    $("#friendFinder").show();
+// $("#nodeJS").on("click", function (event) {
+//     $("#recipeWolves").show();
+//     $("#project1").hide();
+//     $("#trivia").hide();
+//     $("#train").hide();
+//     $("#liriBot").show();
+//     $("#bamazon").show();
+//     $("#friendFinder").show();
 
-});
+// });
 
 
-$("#mySQL").on("click", function (event) {
-    $("#recipeWolves").show();
-    $("#project1").hide();
-    $("#trivia").hide();
-    $("#train").hide();
-    $("#liriBot").hide();
-    $("#bamazon").show();
-    $("#friendFinder").hide();
+// $("#mySQL").on("click", function (event) {
+//     $("#recipeWolves").show();
+//     $("#project1").hide();
+//     $("#trivia").hide();
+//     $("#train").hide();
+//     $("#liriBot").hide();
+//     $("#bamazon").show();
+//     $("#friendFinder").hide();
 
-});
+// });
 
-$("#express").on("click", function (event) {
-    $("#recipeWolves").show();
-    $("#project1").hide();
-    $("#trivia").hide();
-    $("#train").hide();
-    $("#liriBot").hide();
-    $("#bamazon").hide();
-    $("#friendFinder").show();
-});
+// $("#express").on("click", function (event) {
+//     $("#recipeWolves").show();
+//     $("#project1").hide();
+//     $("#trivia").hide();
+//     $("#train").hide();
+//     $("#liriBot").hide();
+//     $("#bamazon").hide();
+//     $("#friendFinder").show();
+// });
 
-$("#firebase").on("click", function(event) {
-    $("#project1").show();
-    $("#train").show();
-    $("#recipeWolves").hide();
-    $("#trivia").hide();
-    $("#liriBot").hide();
-    $("#bamazon").hide();
-    $("#friendFinder").hide();
+// $("#firebase").on("click", function(event) {
+//     $("#project1").show();
+//     $("#train").show();
+//     $("#recipeWolves").hide();
+//     $("#trivia").hide();
+//     $("#liriBot").hide();
+//     $("#bamazon").hide();
+//     $("#friendFinder").hide();
 
-})
+// })
 
 
 

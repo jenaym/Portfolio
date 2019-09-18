@@ -1,59 +1,48 @@
 /* Portfolio Page */
 
-#portfolio {
+/* #portfolio {
     background-color: lightgrey;
 }
 
-/* .work {
-  position: relative;
-    margin: 15px 0px;
-}
 
-.work a {
-    color: black;
-} */
-
-
-/* .image {
-  opacity: 1;
-  display: block;
-  max-width: 100%;
-  /* height: auto; */
-  /* max-height: 146px;
-  transition: .5s ease;
-  backface-visibility: hidden;
-
-}  */
 .work:hover .image {
   opacity: 0.6;
   transform: scale(1.1);
   width: 100%;
-}
+} */
 
 
 
-.work:hover .overlay {
+/* .work:hover .overlay {
     transform: scale(1);
     opacity: 1;
-  }
+  } */
+  /* .work:hover{
+    transform: scale(1);
+    opacity: 1;
+  } */
  
   
 
-.overlay {
-    color: white;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    transition: .5s ease;
+/* .overlay {
+    /* color: white; */
+    /* position: absolute; */
+    /* top: 5%;
+    right: 5%; */
+    /* transition: .5s ease;
     opacity: 0;
-}
+} */ 
 
-.text h3 {
+/* .text {
     background-color: white;
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-} 
+    text-size-adjust: auto;
+    text-align: -webkit-center;
+    color: darkolivegreen;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    font-size: 110%;
+}  */
 
   
 
